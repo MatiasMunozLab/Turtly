@@ -1,0 +1,67 @@
+[gd_scene load_steps=10 format=3 uid="uid://breh2uq3rnrsy"]
+
+[ext_resource type="Texture2D" uid="uid://dpxwagnqah1kd" path="res://assets/swin.png" id="1_06d64"]
+[ext_resource type="Script" path="res://jugador.gd" id="1_b833t"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xw2wt"]
+atlas = ExtResource("1_06d64")
+region = Rect2(0, 0, 69, 52)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wiady"]
+atlas = ExtResource("1_06d64")
+region = Rect2(69, 0, 69, 52)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_paxah"]
+atlas = ExtResource("1_06d64")
+region = Rect2(138, 0, 69, 52)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2w5am"]
+atlas = ExtResource("1_06d64")
+region = Rect2(207, 0, 69, 52)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_apveg"]
+atlas = ExtResource("1_06d64")
+region = Rect2(276, 0, 69, 52)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rej4v"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xw2wt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wiady")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_paxah")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2w5am")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_apveg")
+}],
+"loop": true,
+"name": &"reposo",
+"speed": 10.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_2cvdv"]
+radius = 17.0294
+
+[node name="jugador" type="CharacterBody2D"]
+script = ExtResource("1_b833t")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(1, -8)
+sprite_frames = SubResource("SpriteFrames_rej4v")
+animation = &"reposo"
+autoplay = "reposo"
+frame_progress = 0.508374
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -15)
+shape = SubResource("CircleShape2D_2cvdv")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2, 2)
