@@ -1,13 +1,13 @@
-#🌊 Turtly
+🌊 **Turtly**
 
 Un juego 2D side-scroller para Android, donde una pequeña tortuga bebé se adentra en el océano para encontrar a su madre, enfrentando peligros y aprendiendo a sobrevivir. El juego combina simplicidad, emoción y educación ambiental.
 
-#🎯 Mensaje principal
+🎯** Mensaje principal**
 
 Aunque pequeño y frágil, siempre podés hacer cosas grandes.
 Turtly busca transmitir resiliencia, crecimiento y cuidado del ambiente marino.
 
-#🧩 Concepto del juego
+🧩 **Concepto del juego**
 
 Turtly es una tortuga recién nacida que, tras quedar sola en la playa, decide adentrarse en el océano. Allí deberá:
 
@@ -21,7 +21,7 @@ Salir a la superficie antes de quedarse sin oxígeno
 
 Es un juego simple, lineal, accesible y rápido, inspirado en Flappy Bird pero con mayor control, exploración y personalidad.
 
-#🕹️ Mecánicas principales (versión móvil + joystick)
+🕹️ **Mecánicas principales (versión móvil + joystick)**
 🎮 Controles en pantalla
 
 Joystick virtual (izquierda):
@@ -42,7 +42,7 @@ Para recargarla, subí a la superficie.
 
 Si se agota, Turtly queda vulnerable y pierde movilidad.
 
-#🎮 Loop de juego
+🎮 **Loop de juego**
 
 Moverse con joystick
 
@@ -54,7 +54,7 @@ Avanzar hacia el final del nivel
 
 Superar desafíos ambientales (bolsas, aceite, anzuelos)
 
-#🎨 Estilo artístico
+🎨 **Estilo artístico**
 
 Pixel art 2D suave, simple y accesible.
 
@@ -64,7 +64,7 @@ Fondos animados para sensación de profundidad.
 
 Herramientas IA ayudaron en el prototipo visual (no en los assets finales).
 
-#🛠️ Tecnologías
+🛠️ **Tecnologías**
 
 Motor: Godot 4.x
 Lenguaje: GDScript
